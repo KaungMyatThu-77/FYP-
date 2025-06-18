@@ -1,0 +1,52 @@
+@import '@fontsource-variable/outfit';
+@import "tailwindcss";
+@plugin "daisyui" {
+  themes: light --default
+}
+
+@plugin "daisyui/theme" {
+  name: "lelms";
+  default: true;
+  prefersdark: false;
+  color-scheme: "light";
+
+  --font-sans: 'Outfit Variable';
+
+  --color-base-100: #ffffff;
+  --color-base-200: #f7f7f7;
+  --color-base-300: #e5e5e5;
+  --color-base-content: #4b4b4b;
+
+  --color-primary: #58cc02;
+  --color-primary-content: oklch(100% 0 0);
+  --color-secondary: rgb(28, 176, 246);
+  --color-secondary-content: oklch(97% 0.013 236.62);
+  --color-accent: #ff4b4b;
+  --color-accent-content: oklch(98% 0.016 73.684);
+  --color-neutral: oklch(98% 0.003 247.858);
+  --color-neutral-content: oklch(12% 0.042 264.695);
+
+  --color-info: #40bdf7;
+  --color-info-content: #055e88;
+  --color-success: #89e219;
+  --color-success-content: #4d800e;
+  --color-warning: #ffd439;
+  --color-warning-content: #8e6f00;
+  --color-error: #ff3939;
+  --color-error-content: #8e0000;
+
+  --radius-selector: 1rem;
+  --radius-field: 1rem;
+  --radius-box: 2rem;
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+  --border: 1px;
+  --depth: 1;
+  --noise: 1;
+}
+
+body {
+  font-size: 14px;
+  line-height: 1.4;
+  font-kerning: auto;
+}
